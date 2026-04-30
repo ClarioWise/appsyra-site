@@ -199,7 +199,7 @@ export default function AboutPage() {
             Where we are
           </span>
           <h2 className="mb-4 text-[clamp(1.75rem,3vw,2.5rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream max-w-[560px]">
-            A team distributed across UAE and Europe.
+            A team distributed across Asia and Southeast Asia.
           </h2>
           <p className="mb-16 max-w-[480px] text-[1.0625rem] leading-[1.65] text-[#7A6A62]">
             Remote-first and senior-weighted, we work across time zones with async discipline and a shared culture built around craft and clarity.
@@ -228,31 +228,31 @@ export default function AboutPage() {
               <polygon points="80,180 140,170 165,195 165,260 140,305 100,315 65,295 50,255 55,210 68,190" fill="url(#dotland)" opacity="0.5" />
               <polygon points="460,240 500,238 520,265 515,310 490,335 460,330 440,305 435,270 445,250" fill="url(#dotland)" opacity="0.55" />
               <polygon points="670,140 730,130 760,150 755,185 720,200 680,190 660,170 662,150" fill="url(#dotland)" opacity="0.5" />
-              {/* UAE dot */}
+              {/* Vietnam dot */}
               <g style={{ animation: "pulse 2.4s ease-in-out infinite" }}>
-                <circle cx="510" cy="195" r="28" fill="#C63D1B" opacity="0.08" />
-                <circle cx="510" cy="195" r="16" fill="#C63D1B" opacity="0.16" />
-                <circle cx="510" cy="195" r="7"  fill="#C63D1B" />
-                <circle cx="510" cy="195" r="3"  fill="#FAF7F2" />
+                <circle cx="695" cy="185" r="28" fill="#C63D1B" opacity="0.08" />
+                <circle cx="695" cy="185" r="16" fill="#C63D1B" opacity="0.16" />
+                <circle cx="695" cy="185" r="7"  fill="#C63D1B" />
+                <circle cx="695" cy="185" r="3"  fill="#FAF7F2" />
               </g>
-              {/* Europe dot */}
+              {/* Southeast Asia dot */}
               <g style={{ animation: "pulse 2.4s ease-in-out infinite", animationDelay: "1.2s" }}>
-                <circle cx="382" cy="82" r="24" fill="#C63D1B" opacity="0.08" />
-                <circle cx="382" cy="82" r="14" fill="#C63D1B" opacity="0.16" />
-                <circle cx="382" cy="82" r="6"  fill="#C63D1B" />
-                <circle cx="382" cy="82" r="2.5" fill="#FAF7F2" />
+                <circle cx="710" cy="215" r="24" fill="#C63D1B" opacity="0.08" />
+                <circle cx="710" cy="215" r="14" fill="#C63D1B" opacity="0.16" />
+                <circle cx="710" cy="215" r="6"  fill="#C63D1B" />
+                <circle cx="710" cy="215" r="2.5" fill="#FAF7F2" />
               </g>
               {/* Connection arc */}
-              <path d="M 382 82 Q 446 40 510 195" stroke="#C63D1B" strokeWidth="1.2" strokeDasharray="5,8" opacity="0.3" fill="none" />
+              <path d="M 695 185 Q 702 198 710 215" stroke="#C63D1B" strokeWidth="1.2" strokeDasharray="5,8" opacity="0.3" fill="none" />
               {/* Labels */}
-              <text x="522" y="192" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">DUBAI, UAE</text>
-              <text x="394" y="79"  fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">EUROPE</text>
+              <text x="708" y="182" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">VIETNAM</text>
+              <text x="723" y="212" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">SOUTHEAST ASIA</text>
               {/* Bottom fade */}
               <rect x="0" y="310" width="900" height="70" fill="#181210" opacity="0.6" />
             </svg>
           </div>
           <p className="mt-5 text-[0.8125rem] tracking-[0.02em] text-[#4A3C34]">
-            Distributed team · Async-first · UAE &amp; Europe · Remote by design
+            Distributed team · Async-first · Asia · Southeast Asia · Remote by design
           </p>
         </div>
       </section>

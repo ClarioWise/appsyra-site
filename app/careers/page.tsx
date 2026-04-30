@@ -53,7 +53,7 @@ const WHY_JOIN = [
   },
   {
     title: "Remote by design.",
-    body: "We are distributed across the UAE and Europe by intention, not by accident. Async communication, written culture, and genuine autonomy are built into how we work.",
+    body: "We are distributed across Asia and Southeast Asia by intention, not by accident. Async communication, written culture, and genuine autonomy are built into how we work.",
   },
   {
     title: "Long-term thinking.",
@@ -113,7 +113,7 @@ export default function CareersPage() {
               We&apos;re hiring.
             </h2>
             <p className="max-w-[480px] text-[1.0625rem] leading-[1.65] text-muted">
-              All roles are remote-first. We are a distributed team across UAE and Europe and we hire across time zones.
+              All roles are remote-first. We are a distributed team across Asia and Southeast Asia and we hire across time zones.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function CareersPage() {
               Remote, senior-weighted, async-first.
             </h2>
             <p className="text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
-              We are a distributed team across the UAE and Europe. We communicate primarily in writing, protect deep work time, and make decisions collaboratively without requiring constant synchronous meetings.
+              We are a distributed team across Asia and Southeast Asia. We communicate primarily in writing, protect deep work time, and make decisions collaboratively without requiring constant synchronous meetings.
             </p>
             <p className="mt-4 text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
               We are senior-weighted by design. We prefer smaller teams of highly capable people over larger teams that need heavy coordination overhead.
@@ -177,7 +177,7 @@ export default function CareersPage() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Team structure", value: "Small, senior-weighted" },
-              { label: "Location", value: "UAE · Europe · Remote" },
+              { label: "Location", value: "Asia · Southeast Asia · Remote" },
               { label: "Communication", value: "Async-first, written culture" },
               { label: "Stage", value: "Pre-launch · Building now" },
             ].map(({ label, value }) => (

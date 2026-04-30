@@ -93,7 +93,7 @@ export default function HomePage() {
               Mobile Lifestyle Apps · Pre-launch
             </span>
             <h1 className="mb-7 text-[clamp(2.5rem,4.5vw,4rem)] font-extrabold leading-[1.05] tracking-[-0.035em] text-ink text-balance">
-              Building mobile&nbsp;products that will improve the lives of&nbsp;millions.
+              Building mobile products that will improve the lives of millions.
             </h1>
             <p className="mb-10 max-w-[440px] text-[1.125rem] leading-[1.65] text-muted">
               Appsyra is a pre-launch mobile lifestyle company developing apps for everyday human needs — designed from the ground up for global audiences.
@@ -148,7 +148,7 @@ export default function HomePage() {
               Products built for the way people actually live.
             </h2>
             <p className="text-[1.0625rem] leading-[1.65] text-muted">
-              We will develop mobile lifestyle apps that fit naturally into daily routines — not forced into them.
+              We develop mobile lifestyle apps that fit naturally into daily routines — not forced into them.
             </p>
           </div>
 
@@ -254,7 +254,7 @@ export default function HomePage() {
               Who we are
             </span>
             <p className="mb-6 text-[clamp(1.75rem,3vw,2.5rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream max-w-[600px] text-balance">
-              A team of designers, engineers and product thinkers — distributed across the UAE and Europe.
+              A team of designers, engineers and product thinkers — distributed across Asia and Southeast Asia.
             </p>
             <p className="mb-10 max-w-[520px] text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
               We are a remote-first, senior-weighted team. Diverse in background, united in how we think about building products people genuinely love.
