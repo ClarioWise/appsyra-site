@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join Appsyra — a pre-launch mobile product company building lifestyle apps for global audiences. We are looking for people who care about craft.",
+    "Join Appsyra — a mobile product company building lifestyle apps for global audiences. We are looking for people who care about craft.",
 };
 
 function Arrow() {
@@ -17,35 +17,23 @@ function Arrow() {
 
 const OPEN_ROLES = [
   {
-    title: "Senior Product Designer",
-    type: "Full-time · Remote",
-    area: "Product",
-    description: "We are looking for a senior designer who thinks in systems and cares deeply about the end-to-end user experience. You will shape the product design language and set the quality bar for everything we ship.",
-  },
-  {
-    title: "iOS Engineer",
+    title: "AI-native Engineer",
     type: "Full-time · Remote",
     area: "Engineering",
-    description: "We need a senior iOS engineer who is as comfortable with product thinking as they are with Swift. You will be among the first engineers on the team and will have significant influence over architecture decisions.",
+    description: "We are building at the intersection of AI and mobile product development. As one of the first engineers on the team, you will not just write code — you will shape how we build. You are experienced with AI-assisted development tools such as Cursor or Claude Code, have a hacker mindset, and are comfortable shipping early and iterating fast. Stack: TypeScript, React, Next.js, Bun, PostgreSQL, ClickHouse, Redis, Kafka.",
   },
   {
-    title: "Android Engineer",
+    title: "Creative Marketing Specialist",
     type: "Full-time · Remote",
-    area: "Engineering",
-    description: "A senior Android engineer who builds for quality and longevity. You understand the nuances of the platform and care about performance, accessibility, and the details that make a product feel genuinely good.",
-  },
-  {
-    title: "Product Manager",
-    type: "Full-time · Remote",
-    area: "Product",
-    description: "A product thinker who leads with curiosity, communicates clearly, and makes good decisions under uncertainty. You will own a product area end-to-end and work closely with design and engineering.",
+    area: "Marketing",
+    description: "We need a performance-minded creative who knows how UGC works on iOS and Android. You will own the full UGC pipeline — writing scripts and briefs, managing creators, analysing ad effectiveness, and bringing new ideas. You have experience with Tier 1 English-speaking audiences and a strong grasp of Meta and TikTok platform policies and performance metrics.",
   },
 ];
 
 const WHY_JOIN = [
   {
-    title: "Pre-launch advantage.",
-    body: "Joining before launch means your fingerprints are on everything. The architecture, the culture, the quality bar — all of it is being defined right now.",
+    title: "Early-stage advantage.",
+    body: "Joining now means your fingerprints are on everything. The architecture, the culture, the quality bar — all of it is being defined right now.",
   },
   {
     title: "Craft-first culture.",
@@ -53,7 +41,7 @@ const WHY_JOIN = [
   },
   {
     title: "Remote by design.",
-    body: "We are distributed across Asia and Southeast Asia by intention, not by accident. Async communication, written culture, and genuine autonomy are built into how we work.",
+    body: "We are headquartered in the UAE with part of the team in Southeast Asia — by design, not by accident. Async communication, written culture, and genuine autonomy are built into how we work.",
   },
   {
     title: "Long-term thinking.",
@@ -74,7 +62,7 @@ export default function CareersPage() {
             Build something that lasts, from the beginning.
           </h1>
           <p className="max-w-[560px] text-[1.25rem] leading-[1.65] text-cream/80">
-            We are a pre-launch mobile product company looking for people who care about craft, move deliberately, and want to build products that genuinely improve people&apos;s lives.
+            We are a mobile product company looking for people who care about craft, move deliberately, and want to build products that genuinely improve people&apos;s lives.
           </p>
         </div>
       </section>
@@ -87,7 +75,7 @@ export default function CareersPage() {
               Why Appsyra
             </span>
             <h2 className="text-[clamp(2rem,3vw,2.75rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink">
-              Why join at pre-launch?
+              Why join now?
             </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -113,7 +101,7 @@ export default function CareersPage() {
               We&apos;re hiring.
             </h2>
             <p className="max-w-[480px] text-[1.0625rem] leading-[1.65] text-muted">
-              All roles are remote-first. We are a distributed team across Asia and Southeast Asia and we hire across time zones.
+              All roles are remote-first. We are headquartered in the UAE with part of the team in Southeast Asia — and we hire across time zones.
             </p>
           </div>
 
@@ -126,7 +114,9 @@ export default function CareersPage() {
                     <p className="mt-1 text-[0.875rem] text-subtle">{type}</p>
                   </div>
                   <span className={`rounded-full px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.1em] ${
-                    area === "Engineering" ? "bg-cobalt/[0.07] text-cobalt" : "bg-terra/[0.07] text-terra"
+                    area === "Engineering" ? "bg-cobalt/[0.07] text-cobalt" :
+                    area === "Marketing" ? "bg-amber/[0.12] text-amber" :
+                    "bg-terra/[0.07] text-terra"
                   }`}>
                     {area}
                   </span>
@@ -134,7 +124,7 @@ export default function CareersPage() {
                 <p className="text-[0.9375rem] leading-[1.65] text-muted">{description}</p>
                 <div className="mt-5">
                   <a
-                    href={`mailto:support@appsyra.com?subject=Application: ${encodeURIComponent(title)}`}
+                    href={`mailto:join@appsyra.dev?subject=Application: ${encodeURIComponent(title)}`}
                     className="inline-flex items-center gap-2 text-[0.9375rem] font-semibold text-cobalt tracking-[-0.01em] transition-[gap] hover:gap-3"
                   >
                     Apply via email <Arrow />
@@ -147,7 +137,7 @@ export default function CareersPage() {
           <p className="mt-10 text-[0.9375rem] leading-[1.65] text-muted">
             Don&apos;t see a role that fits?{" "}
             <a
-              href="mailto:support@appsyra.com?subject=General application"
+              href="mailto:join@appsyra.dev?subject=General application"
               className="font-semibold text-cobalt hover:text-terra transition-colors"
             >
               Send us a general application
@@ -168,7 +158,7 @@ export default function CareersPage() {
               Remote, senior-weighted, async-first.
             </h2>
             <p className="text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
-              We are a distributed team across Asia and Southeast Asia. We communicate primarily in writing, protect deep work time, and make decisions collaboratively without requiring constant synchronous meetings.
+              We are headquartered in the UAE with part of the team in Southeast Asia. We communicate primarily in writing, protect deep work time, and make decisions collaboratively without requiring constant synchronous meetings.
             </p>
             <p className="mt-4 text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
               We are senior-weighted by design. We prefer smaller teams of highly capable people over larger teams that need heavy coordination overhead.
@@ -177,9 +167,9 @@ export default function CareersPage() {
           <div className="grid grid-cols-2 gap-4">
             {[
               { label: "Team structure", value: "Small, senior-weighted" },
-              { label: "Location", value: "Asia · Southeast Asia · Remote" },
+              { label: "Location", value: "UAE · Southeast Asia · Remote" },
               { label: "Communication", value: "Async-first, written culture" },
-              { label: "Stage", value: "Pre-launch · Building now" },
+              { label: "Stage", value: "Early-stage · Building now" },
             ].map(({ label, value }) => (
               <div key={label} className="rounded-2xl bg-cream/[0.07] p-6">
                 <p className="mb-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-cream/50">{label}</p>

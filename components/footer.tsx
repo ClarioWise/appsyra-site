@@ -26,7 +26,7 @@ export default function Footer() {
               <Logo height={32} scheme="dark" />
             </Link>
             <p className="mt-4 max-w-xs text-[0.875rem] leading-relaxed text-[#5A4A42]">
-              Building mobile lifestyle apps for global audiences. Pre-launch.
+              Building mobile lifestyle apps for global audiences.
             </p>
           </div>
 
@@ -68,34 +68,29 @@ export default function Footer() {
       <div className="mx-auto max-w-[1280px] px-6 md:px-12 py-8 flex flex-col gap-3 md:flex-row md:justify-between md:items-start flex-wrap">
         <div className="flex flex-col gap-1.5">
           <p className="text-[0.8125rem] leading-relaxed text-[#5A4A42]">
-            <strong className="font-semibold text-[#7A6A62]">Appsyra FZE LLC</strong>
-            {" · "}[BUILDING_CODE], Ajman Media City, Ajman Free Zone, UAE
-          </p>
-          <p className="text-[0.8125rem] text-[#4A3C34]">
-            License No.{" "}[LICENSE_NUMBER]
-            {" · "}Registered [DD.MM.YYYY]
+            <strong className="font-semibold text-[#7A6A62]">Appsyra F.Z.E</strong>
+            {" · "}B.C. 1307467, Ajman Free Zone C1 Building, Ajman Free Zone, Ajman, UAE
           </p>
           <p className="text-[0.8125rem] text-[#4A3C34]">
             <a
-              href="mailto:legal@appsyra.com"
+              href="mailto:legal@appsyra.dev"
               className="text-[#5A4A42] hover:text-subtle transition-colors"
             >
-              legal@appsyra.com
+              legal@appsyra.dev
             </a>
             {" · "}
             <a
-              href="mailto:support@appsyra.com"
+              href="mailto:support@appsyra.dev"
               className="text-[#5A4A42] hover:text-subtle transition-colors"
             >
-              support@appsyra.com
+              support@appsyra.dev
             </a>
           </p>
         </div>
         <p className="text-[0.8125rem] text-[#4A3C34] md:text-right">
-          © {new Date().getFullYear()} Appsyra FZE LLC. All rights reserved.
+          © {new Date().getFullYear()} Appsyra F.Z.E. All rights reserved.
           <br className="hidden md:block" />
-          {" "}All products pre-launch.
-        </p>
+                  </p>
       </div>
     </footer>
   );

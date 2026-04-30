@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Appsyra — Mobile Lifestyle Apps",
   description:
-    "Appsyra is a pre-launch mobile product company developing lifestyle apps for global audiences.",
+    "Appsyra is a mobile product company developing lifestyle apps for global audiences.",
 };
 
 /* ── Arrow icon ── */
@@ -89,14 +89,11 @@ export default function HomePage() {
         {/* Left: copy */}
         <div className="flex flex-col justify-center bg-cream px-6 pb-20 pt-[120px] md:px-16 lg:px-20">
           <div className="max-w-[560px]">
-            <span className="mb-7 inline-flex items-center rounded-full border border-sand px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.12em] text-subtle">
-              Mobile Lifestyle Apps · Pre-launch
-            </span>
-            <h1 className="mb-7 text-[clamp(2.5rem,4.5vw,4rem)] font-extrabold leading-[1.05] tracking-[-0.035em] text-ink text-balance">
+            <h1 className="mb-7 text-[clamp(1.875rem,8vw,4rem)] font-extrabold leading-[1.05] tracking-[-0.035em] text-ink text-balance">
               Building mobile products that will improve the lives of millions.
             </h1>
-            <p className="mb-10 max-w-[440px] text-[1.125rem] leading-[1.65] text-muted">
-              Appsyra is a pre-launch mobile lifestyle company developing apps for everyday human needs — designed from the ground up for global audiences.
+            <p className="mb-10 text-[1rem] leading-[1.65] text-muted md:max-w-[440px] md:text-[1.125rem]">
+              Appsyra is a mobile lifestyle company developing apps for everyday human needs — designed from the ground up for global audiences.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
@@ -128,7 +125,7 @@ export default function HomePage() {
           <span className="mb-8 inline-flex rounded-full border border-white/20 px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.12em] text-cream/60">
             &#8220;
           </span>
-          <blockquote className="text-[clamp(1.75rem,3.5vw,3rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream text-balance">
+          <blockquote className="text-[clamp(1.375rem,4.5vw,3rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream text-balance">
             We believe mobile apps can do more — reach further, matter more, and genuinely change how people live every day.
           </blockquote>
           <p className="mt-8 text-[1rem] tracking-[0.01em] text-[#7A6A62]">
@@ -144,7 +141,7 @@ export default function HomePage() {
             <span className="mb-4 inline-flex rounded-full border border-sand px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.12em] text-subtle">
               What we do
             </span>
-            <h2 className="mb-4 text-[clamp(2rem,3vw,2.75rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink">
+            <h2 className="mb-4 text-[clamp(1.5rem,4vw,2.75rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-ink">
               Products built for the way people actually live.
             </h2>
             <p className="text-[1.0625rem] leading-[1.65] text-muted">
@@ -165,7 +162,7 @@ export default function HomePage() {
               </div>
               <h3 className="mb-3 text-[1.25rem] font-bold tracking-[-0.015em] text-ink">Lifestyle, by design</h3>
               <p className="text-[0.9375rem] leading-[1.65] text-muted">
-                Our apps will be built around real human habits — how people actually move through their days — not around what is technically convenient to build.
+                Our apps are built around real human habits — how people actually move through their days — not around what is technically convenient to build.
               </p>
             </div>
             {/* Card 2 */}
@@ -182,7 +179,7 @@ export default function HomePage() {
               </div>
               <h3 className="mb-3 text-[1.25rem] font-bold tracking-[-0.015em] text-ink">Global from day one</h3>
               <p className="text-[0.9375rem] leading-[1.65] text-muted">
-                Every product we build will be designed for international audiences from the first line of code — localisation, market-fit, and cultural nuance are not afterthoughts.
+                Every product we build is designed for international audiences from the first line of code — localisation, market-fit, and cultural nuance are not afterthoughts.
               </p>
             </div>
             {/* Card 3 */}
@@ -197,7 +194,7 @@ export default function HomePage() {
               </div>
               <h3 className="mb-3 text-[1.25rem] font-bold tracking-[-0.015em] text-ink">Human-centered</h3>
               <p className="text-[0.9375rem] leading-[1.65] text-muted">
-                We will design around real needs, not features. Every product decision will be tested against a simple question: does this make someone&apos;s life genuinely better?
+                We design around real needs, not features. Every product decision is tested against a simple question: does this make someone&apos;s life genuinely better?
               </p>
             </div>
           </div>
@@ -248,13 +245,13 @@ export default function HomePage() {
 
       {/* ── WHO WE ARE ── */}
       <section aria-label="Who we are" className="bg-cobalt px-6 py-24 md:px-16 md:py-28">
-        <div className="mx-auto max-w-[1080px] flex items-center gap-16">
+        <div className="mx-auto max-w-[1080px] flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
           <div className="flex-1">
             <span className="mb-7 inline-flex rounded-full border border-white/25 px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.12em] text-cream/60">
               Who we are
             </span>
             <p className="mb-6 text-[clamp(1.75rem,3vw,2.5rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream max-w-[600px] text-balance">
-              A team of designers, engineers and product thinkers — distributed across Asia and Southeast Asia.
+              A team of designers, engineers and product thinkers — headquartered in the UAE, with part of the team across Southeast Asia.
             </p>
             <p className="mb-10 max-w-[520px] text-[1.0625rem] leading-[1.65] text-[#90ADEC]">
               We are a remote-first, senior-weighted team. Diverse in background, united in how we think about building products people genuinely love.
@@ -283,11 +280,11 @@ export default function HomePage() {
           <span className="inline-flex rounded-full border border-white/25 px-3 py-1 text-[0.6375rem] font-semibold uppercase tracking-[0.12em] text-cream/60">
             Careers
           </span>
-          <h2 className="text-[clamp(2.25rem,4vw,3.5rem)] font-extrabold leading-[1.05] tracking-[-0.04em] text-cream">
+          <h2 className="text-[clamp(1.875rem,5vw,3.5rem)] font-extrabold leading-[1.05] tracking-[-0.04em] text-cream">
             We&apos;re growing.
           </h2>
           <p className="max-w-[480px] text-[1.125rem] leading-[1.6] text-cream/80">
-            We are looking for people who take craft seriously and care about the impact of what they build. Pre-launch is the best time to join.
+            We are looking for people who take craft seriously and care about the impact of what they build. Now is the best time to join.
           </p>
           <div className="mt-2 flex flex-wrap gap-4">
             <Link
@@ -314,16 +311,16 @@ export default function HomePage() {
               Contact
             </span>
             <h2 className="mb-5 text-[clamp(1.75rem,2.5vw,2.5rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-ink">
-              Partners, press, and&nbsp;compliance.
+              Get in touch.
             </h2>
             <p className="max-w-[400px] text-[1.0625rem] leading-[1.65] text-muted">
-              Whether you are a potential partner, a candidate, or reviewing us as part of a compliance process — we welcome your inquiry and respond promptly.
+              For partnerships, press, or hiring — we are easy to reach and respond quickly.
             </p>
           </div>
           <div className="flex flex-col gap-5">
             {[
-              { label: "General", email: "support@appsyra.com" },
-              { label: "Legal & Compliance", email: "legal@appsyra.com" },
+              { label: "General", email: "support@appsyra.dev" },
+              { label: "Legal & Compliance", email: "legal@appsyra.dev" },
             ].map(({ label, email }) => (
               <a
                 key={email}

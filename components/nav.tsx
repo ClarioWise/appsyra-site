@@ -39,7 +39,7 @@ export default function Nav() {
       <nav
         aria-label="Main navigation"
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-200 ${
-          scrolled ? "bg-cream/95 backdrop-blur-sm shadow-[0_1px_0_#E4D8CB]" : "bg-transparent"
+          scrolled ? "bg-cream/95 backdrop-blur-sm shadow-[0_1px_0_#E4D8CB]" : "bg-cream/85 backdrop-blur-sm"
         }`}
       >
         <div className="mx-auto flex h-[68px] max-w-[1280px] items-center justify-between px-6 md:px-12">

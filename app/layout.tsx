@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s — Appsyra",
   },
   description:
-    "Appsyra is a pre-launch mobile product company building lifestyle apps for global audiences.",
+    "Appsyra is a mobile product company building lifestyle apps for global audiences.",
   metadataBase: new URL("https://appsyra.com"),
   openGraph: {
     type: "website",

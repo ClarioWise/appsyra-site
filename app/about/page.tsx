@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div className="h-1 w-4 rounded-full bg-sand" />
           </div>
           <p className="max-w-[560px] text-[1.25rem] leading-[1.65] text-muted">
-            A pre-launch mobile product company with a clear mandate: build lifestyle apps that genuinely matter to people — globally, and at scale.
+            A mobile product company with a clear mandate: build lifestyle apps that genuinely matter to people — globally, and at scale.
           </p>
         </div>
       </section>
@@ -58,10 +58,10 @@ export default function AboutPage() {
               We chose to focus on the lifestyle category — not because it is easy, but because it is intimate. Lifestyle apps sit at the intersection of habit, identity, and aspiration. When they are done well, they become part of how people define their days. Done poorly, they become noise. We are building for the former.
             </p>
             <p>
-              We are currently in the pre-launch phase. Our first products are in active development, being designed and built with the same care and deliberateness that we intend to bring to everything Appsyra makes. We are not in a rush. We are building the kind of foundations — product, team, process — that will allow us to move with confidence when the time comes.
+              Our first products are in active development, being designed and built with the same care and deliberateness that we bring to everything Appsyra makes. We are not in a rush. We are building the kind of foundations — product, team, process — that will allow us to move with confidence.
             </p>
             <p>
-              In the years ahead, Appsyra will grow into a multi-product company with a global footprint. Our apps will be used by millions of people across dozens of markets. The team will expand — always with a bias toward people who care deeply about their craft. And we will have built something that compounds: a reputation, a culture, and a portfolio of products that earn real trust from real people.
+              We are building a portfolio of apps for millions of people across dozens of markets. The team grows with one consistent bias — people who care deeply about their craft. Everything we do is meant to compound: a reputation, a culture, and products that earn real trust from real people.
             </p>
           </div>
         </div>
@@ -199,10 +199,10 @@ export default function AboutPage() {
             Where we are
           </span>
           <h2 className="mb-4 text-[clamp(1.75rem,3vw,2.5rem)] font-extrabold leading-[1.15] tracking-[-0.03em] text-cream max-w-[560px]">
-            A team distributed across Asia and Southeast Asia.
+            Headquartered in the UAE, with part of the team across Southeast Asia.
           </h2>
           <p className="mb-16 max-w-[480px] text-[1.0625rem] leading-[1.65] text-[#7A6A62]">
-            Remote-first and senior-weighted, we work across time zones with async discipline and a shared culture built around craft and clarity.
+            Remote-first and senior-weighted, with our legal home in Ajman and product team spread across the region.
           </p>
 
           {/* Abstract dot-grid map */}
@@ -228,31 +228,31 @@ export default function AboutPage() {
               <polygon points="80,180 140,170 165,195 165,260 140,305 100,315 65,295 50,255 55,210 68,190" fill="url(#dotland)" opacity="0.5" />
               <polygon points="460,240 500,238 520,265 515,310 490,335 460,330 440,305 435,270 445,250" fill="url(#dotland)" opacity="0.55" />
               <polygon points="670,140 730,130 760,150 755,185 720,200 680,190 660,170 662,150" fill="url(#dotland)" opacity="0.5" />
-              {/* Vietnam dot */}
+              {/* UAE dot — HQ */}
               <g style={{ animation: "pulse 2.4s ease-in-out infinite" }}>
-                <circle cx="695" cy="185" r="28" fill="#C63D1B" opacity="0.08" />
-                <circle cx="695" cy="185" r="16" fill="#C63D1B" opacity="0.16" />
-                <circle cx="695" cy="185" r="7"  fill="#C63D1B" />
-                <circle cx="695" cy="185" r="3"  fill="#FAF7F2" />
+                <circle cx="608" cy="170" r="28" fill="#FAF7F2" opacity="0.06" />
+                <circle cx="608" cy="170" r="16" fill="#FAF7F2" opacity="0.12" />
+                <circle cx="608" cy="170" r="7"  fill="#FAF7F2" />
+                <circle cx="608" cy="170" r="3"  fill="#C63D1B" />
               </g>
               {/* Southeast Asia dot */}
-              <g style={{ animation: "pulse 2.4s ease-in-out infinite", animationDelay: "1.2s" }}>
-                <circle cx="710" cy="215" r="24" fill="#C63D1B" opacity="0.08" />
-                <circle cx="710" cy="215" r="14" fill="#C63D1B" opacity="0.16" />
-                <circle cx="710" cy="215" r="6"  fill="#C63D1B" />
-                <circle cx="710" cy="215" r="2.5" fill="#FAF7F2" />
+              <g style={{ animation: "pulse 2.4s ease-in-out infinite", animationDelay: "0.8s" }}>
+                <circle cx="710" cy="200" r="28" fill="#C63D1B" opacity="0.08" />
+                <circle cx="710" cy="200" r="16" fill="#C63D1B" opacity="0.16" />
+                <circle cx="710" cy="200" r="7"  fill="#C63D1B" />
+                <circle cx="710" cy="200" r="3"  fill="#FAF7F2" />
               </g>
-              {/* Connection arc */}
-              <path d="M 695 185 Q 702 198 710 215" stroke="#C63D1B" strokeWidth="1.2" strokeDasharray="5,8" opacity="0.3" fill="none" />
+              {/* Connection arc UAE → Southeast Asia */}
+              <path d="M 608 170 Q 660 168 710 200" stroke="#FAF7F2" strokeWidth="1" strokeDasharray="4,8" opacity="0.18" fill="none" />
               {/* Labels */}
-              <text x="708" y="182" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">VIETNAM</text>
-              <text x="723" y="212" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">SOUTHEAST ASIA</text>
+              <text x="545" y="165" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">UAE · HQ</text>
+              <text x="723" y="197" fontFamily="DM Sans,sans-serif" fontWeight="600" fontSize="11" fill="#FAF7F2" opacity="0.65" letterSpacing="0.06em">SOUTHEAST ASIA</text>
               {/* Bottom fade */}
               <rect x="0" y="310" width="900" height="70" fill="#181210" opacity="0.6" />
             </svg>
           </div>
           <p className="mt-5 text-[0.8125rem] tracking-[0.02em] text-[#4A3C34]">
-            Distributed team · Async-first · Asia · Southeast Asia · Remote by design
+            UAE · Southeast Asia · Remote-first · Async-first
           </p>
         </div>
       </section>
@@ -267,7 +267,7 @@ export default function AboutPage() {
               Want to be part of it?
             </h2>
             <p className="mb-8 text-[1rem] leading-[1.65] text-cream/75">
-              We are building our founding team. Pre-launch is the best time to join — if you care about craft and want to build something that lasts.
+              We are building our founding team. Now is the best time to join — if you care about craft and want to build something that lasts.
             </p>
             <Link
               href="/careers"
@@ -283,7 +283,7 @@ export default function AboutPage() {
               Want to talk?
             </h2>
             <p className="mb-8 text-[1rem] leading-[1.65] text-cream/75">
-              Whether you are a potential partner, an investor, or reviewing us for compliance — we respond to every inquiry promptly and transparently.
+              Whether you are a potential partner, an investor, or a journalist — we respond to every inquiry promptly and transparently.
             </p>
             <Link
               href="/contact"

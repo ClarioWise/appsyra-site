@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Appsyra — for partnerships, press, compliance inquiries, or general questions.",
+    "Get in touch with Appsyra — for partnerships, press, or general questions.",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
             Let&apos;s talk.
           </h1>
           <p className="max-w-[520px] text-[1.25rem] leading-[1.65] text-muted">
-            Whether you are a potential partner, a candidate, a journalist, or reviewing us as part of a compliance or KYB process — we welcome your inquiry and respond promptly.
+            Whether you are a potential partner, a candidate, or a journalist — we welcome your inquiry and respond promptly.
           </p>
         </div>
       </section>
@@ -36,27 +36,27 @@ export default function ContactPage() {
             </p>
             <div className="space-y-4">
               <a
-                href="mailto:support@appsyra.com"
+                href="mailto:support@appsyra.dev"
                 className="group flex flex-col gap-1.5 rounded-2xl border border-sand bg-cream p-7 transition-all hover:border-terra hover:-translate-y-0.5"
               >
                 <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-subtle">General</span>
                 <span className="font-display text-[1.25rem] font-bold tracking-[-0.01em] text-cobalt group-hover:text-terra transition-colors">
-                  support@appsyra.com
+                  support@appsyra.dev
                 </span>
                 <span className="text-[0.875rem] text-muted">
                   Partnerships, press, candidates, general questions
                 </span>
               </a>
               <a
-                href="mailto:legal@appsyra.com"
+                href="mailto:legal@appsyra.dev"
                 className="group flex flex-col gap-1.5 rounded-2xl border border-sand bg-cream p-7 transition-all hover:border-terra hover:-translate-y-0.5"
               >
                 <span className="text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-subtle">Legal &amp; Compliance</span>
                 <span className="font-display text-[1.25rem] font-bold tracking-[-0.01em] text-cobalt group-hover:text-terra transition-colors">
-                  legal@appsyra.com
+                  legal@appsyra.dev
                 </span>
                 <span className="text-[0.875rem] text-muted">
-                  KYB / compliance reviews, legal inquiries, data requests
+                  Legal inquiries, data requests
                 </span>
               </a>
             </div>
@@ -70,11 +70,9 @@ export default function ContactPage() {
               </p>
               <dl className="space-y-4">
                 {[
-                  { label: "Legal name", value: "Appsyra FZE LLC" },
+                  { label: "Legal name", value: "Appsyra F.Z.E" },
                   { label: "Jurisdiction", value: "Ajman Free Zone, UAE" },
-                  { label: "Address", value: "[BUILDING_CODE], Ajman Media City, Ajman Free Zone, Ajman, UAE" },
-                  { label: "License No.", value: "[LICENSE_NUMBER]" },
-                  { label: "Registered", value: "[DD.MM.YYYY]" },
+                  { label: "Address", value: "B.C. 1307467, Ajman Free Zone C1 Building, Ajman Free Zone, Ajman, UAE" },
                   { label: "Activity", value: "Mobile Application Development" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex flex-col gap-0.5">
