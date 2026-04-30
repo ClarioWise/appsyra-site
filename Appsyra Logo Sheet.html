@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appsyra — Logo Sheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:     #FAF7F2;
+      --ink:       #1C1714;
+      --cobalt:    #1847D0;
+      --terra:     #C63D1B;
+      --amber:     #C4871C;
+      --sand:      #E4D8CB;
+      --parchment: #F0E6DA;
+      --muted:     #6B5E56;
+      --subtle:    #8B7D72;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+    }
+
+    .page { max-width: 1100px; margin: 0 auto; padding: 0 40px 80px; }
+
+    .label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border: 1px solid var(--sand);
+      border-radius: 999px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+    hr.rule { border: none; border-top: 1px solid var(--sand); }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .logo-cell {
+      border: 1px solid var(--sand);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .logo-cell__stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 40px;
+      min-height: 160px;
+    }
+    .logo-cell__foot {
+      padding: 10px 16px;
+      border-top: 1px solid var(--sand);
+    }
+
+    .checker {
+      background-image:
+        linear-gradient(45deg, #E4D8CB 25%, transparent 25%),
+        linear-gradient(-45deg, #E4D8CB 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #E4D8CB 75%),
+        linear-gradient(-45deg, transparent 75%, #E4D8CB 75%);
+      background-size: 14px 14px;
+      background-position: 0 0, 0 7px, 7px -7px, -7px 0px;
+      background-color: var(--cream);
+    }
+
+    .size-demo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .size-chip {
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+
+    .clearspace-wrap {
+      position: relative;
+      display: inline-block;
+    }
+    .cs-guide {
+      position: absolute;
+      border: 1px dashed #C4871C;
+      pointer-events: none;
+    }
+
+    .usage-table { width: 100%; border-collapse: collapse; }
+    .usage-table th {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--subtle);
+      padding: 10px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--sand);
+    }
+    .usage-table td {
+      padding: 12px 16px;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      color: var(--muted);
+      border-bottom: 1px solid var(--sand);
+      vertical-align: top;
+    }
+    .usage-table tr:last-child td { border-bottom: none; }
+    .do { color: #1847D0; font-weight: 600; }
+    .dont { color: #C63D1B; font-weight: 600; }
+
+    .mockup-bar {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="border-bottom:1px solid var(--sand);position:sticky;top:0;background:rgba(250,247,242,0.95);backdrop-filter:blur(8px);z-index:10;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 40px;height:56px;display:flex;align-items:center;justify-content:between;gap:16px;">
+      <div style="display:flex;align-items:center;gap:16px;flex:1;">
+        <svg viewBox="0 0 96 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:22px;">
+          <rect width="42" height="32" rx="7" fill="#C63D1B"/>
+          <polygon points="7,28 12,28 21,5 16,5" fill="#FAF7F2"/>
+          <polygon points="16,5 21,5 30,28 25,28" fill="#FAF7F2"/>
+          <rect x="9" y="18" width="19" height="4.5" fill="#FAF7F2"/>
+          <text x="48" y="23" font-family="Syne,sans-serif" font-weight="700" font-size="19" fill="#C63D1B" letter-spacing="-0.4">A</text>
+          <text x="59.5" y="23" font-family="Syne,sans-serif" font-weight="700" font-size="19" fill="#1C1714" letter-spacing="-0.4">ppsyra</text>
+        </svg>
+        <span style="width:1px;height:20px;background:var(--sand);"></span>
+        <span class="label">Logo Sheet · Direction B · v1.0</span>
+      </div>
+      <span class="pill">Refined</span>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <!-- Hero: The mark, large -->
+    <section style="padding:72px 0 64px;text-align:center;border-bottom:1px solid var(--sand);">
+      <p class="label" style="margin-bottom:32px;">The Sigil Mark — Isolated</p>
+
+      <div style="display:inline-block;margin-bottom:40px;">
+        <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:192px;height:144px;">
+          <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+          <polygon points="28,10 38,10 24,62 14,62" fill="#FAF7F2"/>
+          <polygon points="44,10 54,10 68,62 58,62" fill="#FAF7F2"/>
+          <rect x="18" y="40" width="52" height="9" fill="#FAF7F2"/>
+          <polygon points="38,10 44,10 52,40 30,40" fill="#C63D1B"/>
+        </svg>
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:48px;flex-wrap:wrap;">
+        <div>
+          <p class="label" style="margin-bottom:4px;">Primary color</p>
+          <p style="font-size:0.8125rem;color:var(--muted);">Terracotta <span style="font-family:monospace;">#C63D1B</span></p>
+        </div>
+        <div>
+          <p class="label" style="margin-bottom:4px;">Shape</p>
+          <p style="font-size:0.8125rem;color:var(--muted);">Landscape rectangle · rx 14</p>
+        </div>
+        <div>
+          <p class="label" style="margin-bottom:4px;">Mark</p>
+          <p style="font-size:0.8125rem;color:var(--muted);">Reversed-out A · cream #FAF7F2</p>
+        </div>
+        <div>
+          <p class="label" style="margin-bottom:4px;">Ratio</p>
+          <p style="font-size:0.8125rem;color:var(--muted);">4 : 3 (w × h)</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 01: Primary Lockup (Horizontal) -->
+    <section style="padding:56px 0;border-bottom:1px solid var(--sand);">
+      <div class="section-head">
+        <span class="pill">01</span>
+        <span class="label">Primary Lockup — Horizontal</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+
+      <!-- On cream -->
+      <div class="logo-cell" style="margin-bottom:12px;">
+        <div class="logo-cell__stage" style="background:var(--cream);">
+          <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;max-width:380px;">
+            <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+            <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+            <line x1="100" y1="10" x2="100" y2="54" stroke="#E4D8CB" stroke-width="1.5"/>
+            <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+            <text x="142" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#1C1714">ppsyra</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot" style="background:var(--cream);">
+          <span class="label">On cream — primary use</span>
+        </div>
+      </div>
+
+      <!-- On white -->
+      <div class="logo-cell" style="margin-bottom:12px;">
+        <div class="logo-cell__stage" style="background:#FFFFFF;">
+          <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;max-width:380px;">
+            <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+            <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+            <line x1="100" y1="10" x2="100" y2="54" stroke="#E4D8CB" stroke-width="1.5"/>
+            <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+            <text x="142" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#1C1714">ppsyra</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot" style="background:#fff;">
+          <span class="label">On white — document / print use</span>
+        </div>
+      </div>
+
+      <!-- On parchment -->
+      <div class="logo-cell" style="margin-bottom:12px;">
+        <div class="logo-cell__stage" style="background:var(--parchment);">
+          <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;max-width:380px;">
+            <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+            <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+            <line x1="100" y1="10" x2="100" y2="54" stroke="#D4C4B8" stroke-width="1.5"/>
+            <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+            <text x="142" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#1C1714">ppsyra</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot" style="background:var(--parchment);">
+          <span class="label">On parchment — section header use</span>
+        </div>
+      </div>
+
+      <!-- On ink -->
+      <div class="logo-cell" style="margin-bottom:12px;">
+        <div class="logo-cell__stage" style="background:var(--ink);">
+          <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;max-width:380px;">
+            <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+            <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+            <line x1="100" y1="10" x2="100" y2="54" stroke="#3A2E28" stroke-width="1.5"/>
+            <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+            <text x="142" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#FAF7F2">ppsyra</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot" style="background:var(--ink);">
+          <span class="label" style="color:#4A3E38;">On ink — dark backgrounds</span>
+        </div>
+      </div>
+
+      <!-- On cobalt -->
+      <div class="logo-cell">
+        <div class="logo-cell__stage" style="background:var(--cobalt);">
+          <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;max-width:380px;">
+            <rect width="82" height="62" rx="12" fill="#FAF7F2"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#C63D1B"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#C63D1B"/>
+            <rect x="15" y="34" width="44" height="8" fill="#C63D1B"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#FAF7F2"/>
+            <line x1="100" y1="10" x2="100" y2="54" stroke="rgba(250,247,242,0.2)" stroke-width="1.5"/>
+            <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#FAF7F2">Appsyra</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot" style="background:var(--cobalt);">
+          <span class="label" style="color:#4A6AB8;">On cobalt — accent sections (badge inverts)</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 02: Secondary Lockup (Stacked) -->
+    <section style="padding:56px 0;border-bottom:1px solid var(--sand);">
+      <div class="section-head">
+        <span class="pill">02</span>
+        <span class="label">Secondary Lockup — Stacked</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+      <p style="font-size:0.8125rem;color:var(--muted);margin-bottom:28px;max-width:480px;">Use the stacked lockup in square contexts — app stores, avatar thumbnails, social profiles. The badge mark dominates; the wordmark beneath is secondary.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+
+        <!-- Stacked on cream -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--cream);padding:40px 32px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:96px;height:72px;">
+                <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+              </svg>
+              <svg viewBox="0 0 220 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:160px;">
+                <text x="0" y="24" font-family="Syne,sans-serif" font-weight="700" font-size="28" letter-spacing="-0.7" fill="#C63D1B">A</text>
+                <text x="19" y="24" font-family="Syne,sans-serif" font-weight="700" font-size="28" letter-spacing="-0.7" fill="#1C1714">ppsyra</text>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Cream</span></div>
+        </div>
+
+        <!-- Stacked on ink -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--ink);padding:40px 32px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:96px;height:72px;">
+                <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+              </svg>
+              <svg viewBox="0 0 220 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:160px;">
+                <text x="0" y="24" font-family="Syne,sans-serif" font-weight="700" font-size="28" letter-spacing="-0.7" fill="#C63D1B">A</text>
+                <text x="19" y="24" font-family="Syne,sans-serif" font-weight="700" font-size="28" letter-spacing="-0.7" fill="#FAF7F2">ppsyra</text>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot" style="background:var(--ink);"><span class="label" style="color:#4A3E38;">Ink</span></div>
+        </div>
+
+        <!-- Stacked on terra -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--terra);padding:40px 32px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:96px;height:72px;">
+                <rect width="96" height="72" rx="14" fill="#FAF7F2"/>
+                <polygon points="22,9 33,9 18,63 7,63" fill="#C63D1B"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#C63D1B"/>
+                <rect x="14" y="39" width="56" height="9" fill="#C63D1B"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#FAF7F2"/>
+              </svg>
+              <svg viewBox="0 0 220 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:160px;">
+                <text x="0" y="24" font-family="Syne,sans-serif" font-weight="700" font-size="28" letter-spacing="-0.7" fill="#FAF7F2">Appsyra</text>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot" style="background:var(--terra);"><span class="label" style="color:#E8907A;">Terra (badge inverts)</span></div>
+        </div>
+
+      </div>
+
+      <!-- With tagline variant -->
+      <p class="label" style="margin:28px 0 16px;">With tagline — optional secondary variant</p>
+      <div class="logo-cell">
+        <div class="logo-cell__stage" style="background:var(--cream);padding:48px 40px;">
+          <svg viewBox="0 0 420 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:56px;width:auto;max-width:400px;">
+            <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+            <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+            <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+            <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+            <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+            <line x1="100" y1="10" x2="100" y2="62" stroke="#E4D8CB" stroke-width="1.5"/>
+            <text x="116" y="46" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+            <text x="142" y="46" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#1C1714">ppsyra</text>
+            <text x="117" y="64" font-family="DM Sans,sans-serif" font-weight="500" font-size="10" letter-spacing="2.2" fill="#8B7D72">MOBILE LIFESTYLE APPS</text>
+          </svg>
+        </div>
+        <div class="logo-cell__foot"><span class="label">Horizontal + tagline — for KYB documents, email footers, partner decks</span></div>
+      </div>
+    </section>
+
+
+    <!-- 03: Mark Only + Sizes -->
+    <section style="padding:56px 0;border-bottom:1px solid var(--sand);">
+      <div class="section-head">
+        <span class="pill">03</span>
+        <span class="label">Mark Only — All Sizes</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+      <p style="font-size:0.8125rem;color:var(--muted);margin-bottom:32px;max-width:480px;">Use the mark alone when the brand is already established in context — app icons, favicons, social avatars, loading screens. Below 24px, simplify to a solid square.</p>
+
+      <div class="logo-cell">
+        <div class="logo-cell__stage" style="background:var(--cream);padding:40px;gap:48px;flex-wrap:wrap;">
+
+          <!-- 128px -->
+          <div class="size-demo">
+            <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:128px;height:96px;">
+              <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+              <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+              <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+              <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+              <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+            </svg>
+            <span class="size-chip">128 × 96</span>
+          </div>
+
+          <!-- 64px -->
+          <div class="size-demo">
+            <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:64px;height:48px;">
+              <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+              <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+              <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+              <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+              <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+            </svg>
+            <span class="size-chip">64 × 48</span>
+          </div>
+
+          <!-- 40px -->
+          <div class="size-demo">
+            <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:30px;">
+              <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+              <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+              <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+              <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+              <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+            </svg>
+            <span class="size-chip">40 × 30</span>
+          </div>
+
+          <!-- 24px -->
+          <div class="size-demo">
+            <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:18px;">
+              <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+              <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+              <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+              <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+              <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+            </svg>
+            <span class="size-chip">24 × 18</span>
+          </div>
+
+          <!-- Favicon simulation -->
+          <div class="size-demo">
+            <div style="display:flex;flex-direction:column;gap:6px;align-items:center;">
+              <div style="background:#E8E0D8;border-radius:6px 6px 0 0;padding:5px 10px;display:flex;align-items:center;gap:5px;">
+                <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:14px;height:10px;">
+                  <rect width="96" height="72" rx="14" fill="#C63D1B"/>
+                  <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                  <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                  <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                  <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+                </svg>
+                <span style="font-size:0.55rem;color:#6B5E56;font-family:'DM Sans',sans-serif;">Appsyra</span>
+              </div>
+            </div>
+            <span class="size-chip">Favicon / 16px</span>
+          </div>
+
+          <!-- Square mark for app icon -->
+          <div class="size-demo">
+            <div style="width:64px;height:64px;border-radius:14px;background:#C63D1B;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:52px;height:40px;">
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+              </svg>
+            </div>
+            <span class="size-chip">App icon / 64²</span>
+          </div>
+
+        </div>
+        <div class="logo-cell__foot"><span class="label">Mark scales — use the square app-icon crop for 1:1 contexts</span></div>
+      </div>
+
+      <!-- Square app icon variants -->
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+        <!-- iOS style -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--parchment);padding:32px;">
+            <div style="width:80px;height:80px;border-radius:18px;background:#C63D1B;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(198,61,27,0.35);">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:54px;height:40px;">
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">iOS App Icon</span></div>
+        </div>
+        <!-- Rounded square -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--parchment);padding:32px;">
+            <div style="width:80px;height:80px;border-radius:22px;background:#C63D1B;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(198,61,27,0.35);">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:54px;height:40px;">
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#C63D1B"/>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Android / Play Store</span></div>
+        </div>
+        <!-- On cream background -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--cream);padding:32px;">
+            <div style="width:80px;height:80px;border-radius:14px;background:#1C1714;display:flex;align-items:center;justify-content:center;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:54px;height:40px;">
+                <polygon points="22,9 33,9 18,63 7,63" fill="#C63D1B"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#C63D1B"/>
+                <rect x="14" y="39" width="56" height="9" fill="#C63D1B"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#1C1714"/>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Ink bg variant</span></div>
+        </div>
+        <!-- Cobalt -->
+        <div class="logo-cell">
+          <div class="logo-cell__stage" style="background:var(--cream);padding:32px;">
+            <div style="width:80px;height:80px;border-radius:14px;background:#1847D0;display:flex;align-items:center;justify-content:center;">
+              <svg viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:54px;height:40px;">
+                <polygon points="22,9 33,9 18,63 7,63" fill="#FAF7F2"/>
+                <polygon points="39,9 50,9 63,63 52,63" fill="#FAF7F2"/>
+                <rect x="14" y="39" width="56" height="9" fill="#FAF7F2"/>
+                <polygon points="33,9 39,9 47,39 29,39" fill="#1847D0"/>
+              </svg>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Cobalt bg variant</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 04: Clearspace -->
+    <section style="padding:56px 0;border-bottom:1px solid var(--sand);">
+      <div class="section-head">
+        <span class="pill">04</span>
+        <span class="label">Clearspace</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+      <p style="font-size:0.8125rem;color:var(--muted);margin-bottom:32px;max-width:480px;">Always maintain a minimum clearspace equal to the height of the badge mark on all sides. Never place text, graphics, or other logos within this zone.</p>
+
+      <div class="logo-cell">
+        <div class="logo-cell__stage checker" style="padding:64px;">
+          <div style="position:relative;display:inline-block;">
+            <div style="position:absolute;top:-28px;left:0;right:0;height:28px;border-top:1.5px dashed #C4871C;border-left:1.5px dashed #C4871C;border-right:1.5px dashed #C4871C;"></div>
+            <div style="position:absolute;bottom:-28px;left:0;right:0;height:28px;border-bottom:1.5px dashed #C4871C;border-left:1.5px dashed #C4871C;border-right:1.5px dashed #C4871C;"></div>
+            <div style="position:absolute;left:-28px;top:-28px;bottom:-28px;width:28px;border-left:1.5px dashed #C4871C;"></div>
+            <div style="position:absolute;right:-28px;top:-28px;bottom:-28px;width:28px;border-right:1.5px dashed #C4871C;"></div>
+            <svg viewBox="0 0 400 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:54px;width:auto;display:block;">
+              <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+              <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+              <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+              <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+              <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+              <line x1="100" y1="10" x2="100" y2="54" stroke="#E4D8CB" stroke-width="1.5"/>
+              <text x="116" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+              <text x="142" y="50" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#1C1714">ppsyra</text>
+            </svg>
+          </div>
+        </div>
+        <div class="logo-cell__foot">
+          <span class="label">Minimum clearspace = 1× badge mark height on all sides · shown in <span style="color:#C4871C;">amber</span></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 05: Usage Rules -->
+    <section style="padding:56px 0;border-bottom:1px solid var(--sand);">
+      <div class="section-head">
+        <span class="pill">05</span>
+        <span class="label">Usage Rules</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+
+      <div style="border:1px solid var(--sand);border-radius:14px;overflow:hidden;">
+        <table class="usage-table">
+          <thead>
+            <tr>
+              <th style="width:50%;">&#10003; Do</th>
+              <th>&#215; Do not</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="do">&#10003;</span> Use on cream, white, parchment, ink, or cobalt backgrounds</td>
+              <td><span class="dont">&#10007;</span> Place the logo on photographic or patterned backgrounds</td>
+            </tr>
+            <tr>
+              <td><span class="do">&#10003;</span> Invert the badge mark (cream fill, terra A) on terra backgrounds</td>
+              <td><span class="dont">&#10007;</span> Recolor the wordmark in any color other than ink, cream, or terra</td>
+            </tr>
+            <tr>
+              <td><span class="do">&#10003;</span> Use the mark-only in square contexts (app icon, avatar)</td>
+              <td><span class="dont">&#10007;</span> Stretch, squish, rotate, or skew any part of the logo</td>
+            </tr>
+            <tr>
+              <td><span class="do">&#10003;</span> Scale proportionally — always lock aspect ratio</td>
+              <td><span class="dont">&#10007;</span> Add drop shadows, outlines, or glows to the mark</td>
+            </tr>
+            <tr>
+              <td><span class="do">&#10003;</span> Add the tagline variant for KYB documents and partner decks</td>
+              <td><span class="dont">&#10007;</span> Use the logo below 20px height (use the badge mark only)</td>
+            </tr>
+            <tr>
+              <td><span class="do">&#10003;</span> Maintain clearspace of 1× badge height on all sides</td>
+              <td><span class="dont">&#10007;</span> Recreate the wordmark in any other typeface</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- 06: In-Context Mockups -->
+    <section style="padding:56px 0;">
+      <div class="section-head">
+        <span class="pill">06</span>
+        <span class="label">In-Context Mockups</span>
+        <hr class="rule" style="flex:1;">
+      </div>
+
+      <div style="display:grid;gap:12px;">
+
+        <!-- Nav bar -->
+        <div class="logo-cell">
+          <div style="background:var(--cream);border-radius:13px 13px 0 0;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--sand);">
+            <svg viewBox="0 0 260 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:30px;width:auto;">
+              <rect width="50" height="38" rx="7" fill="#C63D1B"/>
+              <polygon points="14,5 20,5 11,33 5,33" fill="#FAF7F2"/>
+              <polygon points="23,5 29,5 37,33 31,33" fill="#FAF7F2"/>
+              <rect x="9" y="21" width="27" height="5" fill="#FAF7F2"/>
+              <polygon points="20,5 23,5 27,21 17,21" fill="#C63D1B"/>
+              <line x1="61" y1="6" x2="61" y2="32" stroke="#E4D8CB" stroke-width="1.5"/>
+              <text x="71" y="30" font-family="Syne,sans-serif" font-weight="700" font-size="27" letter-spacing="-0.7" fill="#C63D1B">A</text>
+              <text x="88" y="30" font-family="Syne,sans-serif" font-weight="700" font-size="27" letter-spacing="-0.7" fill="#1C1714">ppsyra</text>
+            </svg>
+            <div style="display:flex;gap:28px;align-items:center;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:0.875rem;color:var(--muted);">About</span>
+              <span style="font-family:'DM Sans',sans-serif;font-size:0.875rem;color:var(--muted);">Careers</span>
+              <span style="font-family:'DM Sans',sans-serif;font-size:0.875rem;color:var(--muted);">Partners</span>
+              <button style="background:#C63D1B;color:#FAF7F2;border:none;padding:8px 18px;border-radius:8px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.8125rem;cursor:pointer;">Contact</button>
+            </div>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Website nav bar</span></div>
+        </div>
+
+        <!-- Email footer -->
+        <div class="logo-cell">
+          <div style="background:#1C1714;padding:36px 40px;border-radius:13px 13px 0 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+            <svg viewBox="0 0 420 72" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:44px;width:auto;">
+              <rect width="82" height="62" rx="12" fill="#C63D1B"/>
+              <polygon points="23,8 33,8 19,54 9,54" fill="#FAF7F2"/>
+              <polygon points="38,8 48,8 60,54 50,54" fill="#FAF7F2"/>
+              <rect x="15" y="34" width="44" height="8" fill="#FAF7F2"/>
+              <polygon points="33,8 38,8 44,34 26,34" fill="#C63D1B"/>
+              <line x1="100" y1="10" x2="100" y2="62" stroke="#3A2E28" stroke-width="1.5"/>
+              <text x="116" y="46" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#C63D1B">A</text>
+              <text x="142" y="46" font-family="Syne,sans-serif" font-weight="700" font-size="44" letter-spacing="-1.2" fill="#FAF7F2">ppsyra</text>
+              <text x="117" y="64" font-family="DM Sans,sans-serif" font-weight="500" font-size="10" letter-spacing="2.2" fill="#5A4A42">MOBILE LIFESTYLE APPS</text>
+            </svg>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:#5A4A42;line-height:1.6;max-width:260px;">© 2026 Appsyra. All rights reserved.<br>Registered company. All products pre-launch.</p>
+          </div>
+          <div class="logo-cell__foot"><span class="label">Email / page footer — dark background with tagline</span></div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer style="border-top:1px solid var(--sand);">
+    <div style="max-width:1100px;margin:0 auto;padding:24px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <p style="font-family:'DM Sans',sans-serif;font-size:0.7rem;color:var(--subtle);">Appsyra Logo — Direction B · Sigil · v1.0</p>
+      <p style="font-family:'DM Sans',sans-serif;font-size:0.7rem;color:var(--subtle);">Terracotta #C63D1B · Syne 700 · 4:3 badge mark</p>
+    </div>
+  </footer>
+
+</body>
+</html>

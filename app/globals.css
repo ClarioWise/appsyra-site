@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand colors */
+  --color-cream:     #FAF7F2;
+  --color-ink:       #1C1714;
+  --color-cobalt:    #1847D0;
+  --color-terra:     #C63D1B;
+  --color-amber:     #C4871C;
+  --color-sand:      #E4D8CB;
+  --color-parchment: #F0E6DA;
+  --color-muted:     #6B5E56;
+  --color-subtle:    #8B7D72;
+
+  /* Fonts */
+  --font-display: var(--font-syne), sans-serif;
+  --font-body:    var(--font-dm-sans), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+*, *::before, *::after { box-sizing: border-box; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FAF7F2;
+  color: #1C1714;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid #C63D1B;
+  outline-offset: 3px;
+}
+
+/* Map pulse animation (used in About geography section) */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.55; }
 }
